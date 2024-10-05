@@ -2,6 +2,8 @@
 #include "Funcionario.h"
 #include "Assistente.h"
 #include "Tecnico.h"
+#include "Administrativo.h"
+
 #include <string>
 using namespace std;
 
@@ -14,6 +16,8 @@ int main(){
 
 	Tecnico tec1("Luis", 900, 2022199, 100);
 	tec1.exibeDados();
-
+	
+	Administrativo adm1("Diogo", 1000, 2022198, "noite", 10);
+	adm1.exibeDados();
 }
 
