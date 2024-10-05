@@ -13,8 +13,13 @@ void Funcionario::addAumento(double valor){
 	this->salario += valor;
 }
 
+double Funcionario::getSalario(){
+	return this->salario;
+}
+
 double Funcionario::ganhoAnual(){
-	return this->salario * 12;
+	double salario = getSalario();
+	return salario * 12;
 }
 
 void Funcionario::exibeDados(){
